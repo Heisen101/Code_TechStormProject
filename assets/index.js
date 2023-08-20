@@ -9,7 +9,7 @@
 //   const options = {
 //     method: "GET",
 //     headers: {
-//       "X-RapidAPI-Key": "83e5acf574mshd6b61c152e70e23p1d325fjsn37a2a2641b3b",
+//       "X-RapidAPI-Key": "",
 //       "X-RapidAPI-Host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
 //     },
 //   };
@@ -33,7 +33,7 @@
 //   const options = {
 //     method: "GET",
 //     headers: {
-//       "X-RapidAPI-Key": "83e5acf574mshd6b61c152e70e23p1d325fjsn37a2a2641b3b",
+//       "X-RapidAPI-Key": "",
 //       "X-RapidAPI-Host": "spoonacular-recipe-food-nutrition-v1.p.rapidapi.com",
 //     },
 //   };
@@ -55,7 +55,7 @@
 //   const options = {
 //     method: "GET",
 //     headers: {
-//       "X-RapidAPI-Key": "83e5acf574mshd6b61c152e70e23p1d325fjsn37a2a2641b3b",
+//       "X-RapidAPI-Key": "",
 //       "X-RapidAPI-Host": "the-cocktail-db.p.rapidapi.com",
 //     },
 //   };
@@ -73,7 +73,7 @@
 // fetchData(); // Call the async function
 
 // $(document).ready(function () {
-//   var apiKey = "afa408510e934adba394eac7eaabf99c";
+//   var apiKey = "";
 //   var id = "5ed6604691c37cdc054bd0d0"; // Replace with the actual endpoint you want to use
 //   var queryURL = `https://forkify-api.herokuapp.com/api/v2/recipes/${id}`;
 
