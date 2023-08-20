@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+#imagesHeader {
+  width: 100%;
+  height: auto;
+}
+/* ------------NAV BAR----------- */
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+#welcome {
+  font-weight: 500;
+  color: white;
+}
+
+/* -------------------Header------------- */
+#headerImg {
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/food1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 500px;
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+}
+#cocktailsButton {
+  padding: 13px 43px;
+  border-radius: 22px;
+  background-color: #d98e43;
+  color: #ffff;
+  transition: transform 0.3s;
+}
+#cocktailsButton:hover {
+  transform: scale(1.1);
+}
+#signup {
+  margin-left: 30px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: #d98e43;
+  transition: transform 0.3s;
+}
+#signup:hover {
+  transform: scale(1.1);
+}
+#signin {
+  margin-left: 10px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background-color: #d98e43;
+  transition: transform 0.3s;
+}
+#signin:hover {
+  transform: scale(1.1);
+}
+#searchIconNav {
+  transition: transform 0.3s;
+  transition: color 0.3s;
+}
+#searchIconNav:hover {
+  transform: scale(1.1);
+  color: white;
+}
+#inputSearch {
+  width: 40%;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+}
+#searchInputArea {
+  padding: 10px 10px 10px 10px;
+  border-radius: 30px;
+}
+#searchBarButton {
+  border-radius: 30px;
+  background-color: black;
+  transition: 0.3;
+}
+#searchBarButton:hover {
+  transform: scale(1.1);
+}
+
+/* -------------Footer-------------------- */
+#FooterSection {
+  background-color: black;
+  color: white;
+  /* border-bottom: solid 2px white; */
+}
+#FooterImage {
+  width: 200px;
+  height: 90px;
+}
+/* cancel a default behaviour*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+footer .row .col-4 .row .col-12 a svg {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+#FooterSignUp {
+  width: 60%;
+  margin-left: 9%;
+}
+#signUpFooterButton {
+  border-radius: 30px;
+  background-color: black;
+  transition: 0.3;
+  color: white;
+  margin-left: 5px;
+}
+#signUpFooterButton:hover {
+  transform: scale(1.1);
+}
+#SignUpFooter {
+  border-radius: 50px;
+  background-color: grey;
+}
+footer .row .col-4 .row .col-12 .list-unstyled a li {
+  margin-top: 10px;
+  transition: 0.3s;
+}
+footer .row .col-4 .row .col-12 .list-unstyled a li:hover {
+  transform: scale(1.1);
+}
+.content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+footer {
+  padding-bottom: 3%;
+}
+
+/* -----------Media Querry -------------------------------*/
+@media (max-width: 995px) {
+  #signup,
+  #searchIconNav,
+  #signin {
+    display: none;
+  }
+}
