@@ -10,6 +10,7 @@ body {
   width: 100%;
   height: auto;
 }
+
 /* ------------NAV BAR----------- */
 nav {
   background-color: rgba(0, 0, 0, 0.8);
@@ -34,7 +35,9 @@ nav {
 
   align-items: center;
   text-align: center;
+
 }
+
 #cocktailsButton {
   padding: 13px 43px;
   border-radius: 22px;
@@ -42,9 +45,11 @@ nav {
   color: #ffff;
   transition: transform 0.3s;
 }
+
 #cocktailsButton:hover {
   transform: scale(1.1);
 }
+
 #signup {
   margin-left: 30px;
   margin-right: 10px;
@@ -52,9 +57,11 @@ nav {
   background-color: #d98e43;
   transition: transform 0.3s;
 }
+
 #signup:hover {
   transform: scale(1.1);
 }
+
 #signin {
   margin-left: 10px;
   margin-right: 50px;
@@ -62,32 +69,72 @@ nav {
   background-color: #d98e43;
   transition: transform 0.3s;
 }
+
 #signin:hover {
   transform: scale(1.1);
 }
+
 #searchIconNav {
   transition: transform 0.3s;
   transition: color 0.3s;
 }
+
 #searchIconNav:hover {
   transform: scale(1.1);
   color: white;
 }
+
 #inputSearch {
   width: 40%;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
 }
+
 #searchInputArea {
   padding: 10px 10px 10px 10px;
   border-radius: 30px;
 }
+
 #searchBarButton {
   border-radius: 30px;
   background-color: black;
   transition: 0.3;
 }
+
 #searchBarButton:hover {
   transform: scale(1.1);
+}
+
+/* ------------------Japanese Header-------- */
+#japaneseHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/Japanese\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 500px;
+
+}
+
+#indianHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/indian\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 500px;
+}
+
+#turkishHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/turkish\ 3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
 }
 
 /* -------------Footer-------------------- */
@@ -96,20 +143,24 @@ nav {
   color: white;
   /* border-bottom: solid 2px white; */
 }
+
 #FooterImage {
   width: 200px;
   height: 70px;
 }
+
 /* cancel a default behaviour*/
 a {
   color: inherit;
   text-decoration: none;
 }
+
 nav ul.nav li.nav-item a {
   color: rgba(215, 200, 191, 0.908);
   font-weight: bold;
   transition: color 0.3;
 }
+
 nav ul.nav li.nav-item a:hover {
   color: rgb(107, 214, 214);
 }
@@ -118,10 +169,12 @@ footer .row .col-4 .row .col-12 a svg {
   margin-left: 12px;
   margin-right: 12px;
 }
+
 #FooterSignUp {
   width: 60%;
   margin-left: 9%;
 }
+
 #signUpFooterButton {
   border-radius: 30px;
   background-color: black;
@@ -129,20 +182,25 @@ footer .row .col-4 .row .col-12 a svg {
   color: white;
   margin-left: 5px;
 }
+
 #signUpFooterButton:hover {
   transform: scale(1.1);
 }
+
 #SignUpFooter {
   border-radius: 50px;
   background-color: grey;
 }
+
 footer .row .col-4 .row .col-12 .list-unstyled a li {
   margin-top: 10px;
   transition: 0.3s;
 }
+
 footer .row .col-4 .row .col-12 .list-unstyled a li:hover {
   transform: scale(1.1);
 }
+
 .content-wrapper {
   width: 100%;
   max-width: 1200px;
@@ -150,12 +208,16 @@ footer .row .col-4 .row .col-12 .list-unstyled a li:hover {
   padding: 20px;
   background-color: #fff;
 }
+
 footer {
   padding-bottom: 3%;
 }
 
+
+
 /* -----------Media Querry -------------------------------*/
 @media (max-width: 995px) {
+
   #signup,
   #searchIconNav,
   #signin {
