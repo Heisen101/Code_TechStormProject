@@ -121,28 +121,11 @@
 
 $(document).ready(function () {
   const headerImg = $("#headerImg");
-  const indianHeader = $("#indianHeader");
-  const japaneseHeader = $("#japaneseHeader");
-  const turkishHeader = $("#turkishHeader");
-  const japaneseButton = $("#japaneseButton");
-  const indianButton = $("#indianButton");
-  const turkishButton = $("#turkishButton");
-  const italianButton = $("#italianButton");
-  japaneseButton.on("click", function () {
-    headerImg.addClass("d-none");
-    indianHeader.addClass("d-none");
-    japaneseHeader.removeClass("d-none");
-  });
-  indianButton.on("click", function () {
-    headerImg.addClass("d-none");
-    japaneseHeader.addClass("d-none");
-    turkishHeader.addClass("d-none");
-    indianHeader.removeClass("d-none");
-  });
-  turkishButton.on("click", function () {
-    headerImg.addClass("d-none");
-    japaneseHeader.addClass("d-none");
-    indianHeader.addClass("d-none");
-    turkishHeader.removeClass("d-none");
+  const headerSection = $(".container-fluid.row.d-flex.justify-content-center");
+  const headerButtons = $(".headerButton");
+  headerButtons.on("click", function () {
+    const target = $(this).data("target");
+    headerSection.addClass("d-none");
+    $("#" + target).removeClass("d-none");
   });
 });
