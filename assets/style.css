@@ -196,6 +196,42 @@ nav {
 
 }
 
+#pastaHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/pasta.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+
+}
+
+#veganHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/vegan\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+
+}
+
+#soupHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/soup\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+
+}
+
 
 
 /* -------------Footer-------------------- */
