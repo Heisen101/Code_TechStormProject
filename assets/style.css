@@ -177,7 +177,7 @@ nav {
 #dinnerHeader {
   margin: 0;
   padding: 0;
-  background-image: url(./images/lunch\ 1.jpg);
+  background-image: url(./images/dinner1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -189,12 +189,24 @@ nav {
 #dissertHeader {
   margin: 0;
   padding: 0;
-  background-image: url(./images/lunch\ 1.jpg);
+  background-image: url(./images/dissert\ 2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   min-height: 500px;
+
+}
+
+#aboutHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/about\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 1000px;
 
 }
 
