@@ -120,7 +120,6 @@
 // ----------Event Listeners for Headers------
 
 $(document).ready(function () {
-  const headerImg = $("#headerImg");
   const headerSection = $(".container-fluid.row.d-flex.justify-content-center");
   const headerButtons = $(".headerButton");
   headerButtons.on("click", function () {
