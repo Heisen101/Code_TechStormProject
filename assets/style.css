@@ -170,7 +170,7 @@ nav {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  min-height: 500px;
+  min-height: 600px;
 
 }
 
@@ -190,6 +190,18 @@ nav {
   margin: 0;
   padding: 0;
   background-image: url(./images/dissert\ 2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+
+}
+
+#cocktailsHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/cocktails.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
