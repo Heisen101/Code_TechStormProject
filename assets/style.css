@@ -150,6 +150,56 @@ nav {
   min-height: 500px;
 }
 
+#breakfastHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/breakfast\ 3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+
+}
+
+#lunchHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/lunch\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+
+}
+
+#dinnerHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/lunch\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+
+}
+
+#dissertHeader {
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/lunch\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+
+}
+
+
+
 /* -------------Footer-------------------- */
 #FooterSection {
   background-color: black;
@@ -161,6 +211,7 @@ nav {
   width: 200px;
   height: 70px;
 }
+
 
 /* cancel a default behaviour*/
 a {
