@@ -50,39 +50,13 @@ nav {
   transform: scale(1.1);
 }
 
-#signup {
-  margin-left: 30px;
-  margin-right: 10px;
-  border-radius: 10px;
-  background-color: #d98e43;
-  transition: transform 0.3s;
-}
 
-#signup:hover {
-  transform: scale(1.1);
-}
 
-#signin {
-  margin-left: 10px;
-  margin-right: 50px;
-  border-radius: 10px;
-  background-color: #d98e43;
-  transition: transform 0.3s;
-}
 
-#signin:hover {
-  transform: scale(1.1);
-}
 
-#searchIconNav {
-  transition: transform 0.3s;
-  transition: color 0.3s;
-}
 
-#searchIconNav:hover {
-  transform: scale(1.1);
-  color: white;
-}
+
+
 
 #inputSearch {
   width: 40%;

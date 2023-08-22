@@ -15,12 +15,19 @@
 
 <body>
   <header class="container-wrapper" id="header">
+
     <!-- --------------Nav Bar -->
     <nav class="navbar navbar-expand-lg row bg-dark border-bottom border-body" data-bs-theme="dark">
-      <div class="container-fluid ">
-        <div class="col-6">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="col-6 d-flex justify-content-start px-5">
+
+        <img id="FooterImage" src="./assets/images/footerLogo.png" alt="footerLogo" ">
+       
+      </div>
+      <div class=" col-6 d-flex justify-content-end">
+        <div class=" row ">
+          <button class=" navbar-toggler " type=" button" data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+            aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
@@ -37,7 +44,8 @@
                   <li><a class="dropdown-item headerButton" data-target="breakfastHeader" id="breakfastButton"
                       href="#">Breakfast</a></li>
                   <li><a class="dropdown-item headerButton" data-target="lunchHeader" id="lunchButton"
-                      href="#">Lunch</a></li>
+                      href="#">Lunch</a>
+                  </li>
                   <li><a class="dropdown-item headerButton" data-target="dinnerHeader" id="dinnerButton"
                       href="#">Dinner</a></li>
                   <li>
@@ -76,21 +84,9 @@
             </ul>
           </div>
         </div>
-        <div class="col-6 d-flex justify-content-end ">
-          <div class="nav-right mx-3">
-            <a href="" data-vars-event-name="search" rel="nofollow" class="button nav-click-item flex nav-search-button"
-              aria-label="search">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" class="bi bi-search"
-                viewBox="0 0 16 16" id="searchIconNav">
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-              </svg>
-              <a href=""><button class="btn " id="signup"> SIGN UP</button></a></a>
-            <a href=""><button class="btn " id="signin"> SIGN IN</button></a></a>
-          </div>
-        </div>
       </div>
-      </div>
+
+
 
     </nav>
 
