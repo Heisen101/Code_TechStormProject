@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="container-wrapper" id="header">
+  <header class="container-fluid" id="header">
 
     <!-- --------------Nav Bar -->
     <nav class="navbar navbar-expand-lg row bg-dark border-bottom border-body" data-bs-theme="dark">
@@ -37,18 +37,18 @@
                   <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                     aria-expanded="false">Meal</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item headerButton" data-target="breakfastHeader" id="breakfastButton"
-                        href="#">Breakfast</a></li>
-                    <li><a class="dropdown-item headerButton" data-target="lunchHeader" id="lunchButton"
-                        href="#">Lunch</a>
+                    <li><a class="dropdown-item headerButton" data-value="breakfast" data-target="breakfastHeader"
+                        id="breakfastButton" href="#">Breakfast</a></li>
+                    <li><a class="dropdown-item headerButton" data-value="lunch" data-target="lunchHeader"
+                        id="lunchButton" href="#">Lunch</a>
                     </li>
-                    <li><a class="dropdown-item headerButton" data-target="dinnerHeader" id="dinnerButton"
-                        href="#">Dinner</a></li>
+                    <li><a class="dropdown-item headerButton" data-value="dinner" data-target="dinnerHeader"
+                        id="dinnerButton" href="#">Dinner</a></li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
-                    <li><a class="dropdown-item headerButton" data-target="dissertHeader" id="dissertButton"
-                        href="#">Dessert</a></li>
+                    <li><a class="dropdown-item headerButton" data-value="dissert" data-target="dissertHeader"
+                        id="dissertButton" href="#">Dessert</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -56,18 +56,18 @@
                     aria-expanded="false">
                     Cuisine</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item headerButton" data-target="italianHeader" id="italianButton"
-                        href="#">Italian</a></li>
-                    <li><a class="dropdown-item headerButton" data-target="turkishHeader" id="turkishButton"
-                        href="#">Turkish</a></li>
+                    <li><a class="dropdown-item headerButton" data-value="italian" data-target="italianHeader"
+                        id="italianButton" href="#">Italian</a></li>
+                    <li><a class="dropdown-item headerButton" data-value="turkish" data-target="turkishHeader"
+                        id="turkishButton" href="#">Turkish</a></li>
 
-                    <li><a class="dropdown-item headerButton" data-target="indianHeader" id="indianButton"
-                        href="#">Indian</a></li>
+                    <li><a class="dropdown-item headerButton" data-value="indian" data-target="indianHeader"
+                        id="indianButton" href="#">Indian</a></li>
                     <li>
                       <hr class="dropdown-divider" />
                     </li>
-                    <li><a class="dropdown-item headerButton" data-target="japaneseHeader" id="japaneseButton"
-                        href="#">Japanese</a></li>
+                    <li><a class="dropdown-item headerButton" data-value="japanese" data-target="japaneseHeader"
+                        id="japaneseButton" href="#">Japanese</a></li>
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -87,340 +87,386 @@
           </div>
       </div>
 
-
-
     </nav>
 
 
 
-    <!-- -----------------------------Header Image and Buttons ----------------- -->
-
-
-    <div class="container-fluid row d-flex justify-content-center   " id="headerImg">
-
-      <div class="logo ">
-        <h1 id="welcome">Autumnal Elixir Blends for a Cozy Season</h1>
-
-        <button type="button" class="btn body-3 btn-lg my-3" id="cocktailsButton">
-          Unveil Autumn's Magic: Irresistible Cocktail Recipes
-        </button>
-
-      </div>
-      <div class="row flex justify-content-center">
-        <div class=" col-5 input-group  " id="inputSearch">
-
-
-
-          <input type="text" aria-label="Your favorite Recipe" placeholder="Your favorite recipe" class="form-control"
-            id="searchInputArea">
-          <button id="searchBarButton" class="btn btn-secondary">SEARCH</button>
-        </div>
-      </div>
-    </div>
 
   </header>
+  <!-- -----------------------------Header Image and Buttons ----------------- -->
+  <div class="container-fluid row d-flex justify-content-center   " id="headerImg">
 
+    <div class="logo ">
+      <h1 id="welcome">Autumnal Elixir Blends for a Cozy Season</h1>
+
+      <button type="button" class="btn body-3 btn-lg my-3" id="cocktailsButton">
+        Unveil Autumn's Magic: Irresistible Cocktail Recipes
+      </button>
+
+    </div>
+    <div class="row flex justify-content-center">
+      <div class=" col-5 input-group  " id="inputSearch">
+        <input type="text" aria-label="Your favorite Recipe" placeholder="Your favorite recipe" class="form-control"
+          id="searchInputArea">
+        <button id="searchBarButton" class="btn btn-secondary">SEARCH</button>
+      </div>
+    </div>
+  </div>
   <!-- ---------------------------------------Header for Japanese Cuisine------------------------ -->
+  <div class="container-wrapper">
+    <div>
+      <section class="container-fluid row d-flex justify-content-center d-none" id="japaneseHeader">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <div class="row">
+            <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Japanese Recipes</h2> <br>
+            <p style="color: antiquewhite;">Explore the diverse world of Japanese cuisine beyond the familiar sushi and
+              teriyaki chicken with our
+              collection of
+              authentic recipes. Uncover step-by-step cooking guides that will help you recreate the finest ramen bowls,
+              crispy
+              tempura, succulent yakitori skewers, and indulge in the most exquisite Japanese desserts, all from the
+              comfort
+              of your
+              own home.</p>
+          </div>
+        </div>
 
-
-  <section class="container-fluid row d-flex justify-content-center d-none" id="japaneseHeader">
-    <div class="col-6 d-flex justify-content-center align-items-center">
-      <div class="row">
-        <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Japanese Recipes</h2> <br>
-        <p style="color: antiquewhite;">Explore the diverse world of Japanese cuisine beyond the familiar sushi and
-          teriyaki chicken with our
-          collection of
-          authentic recipes. Uncover step-by-step cooking guides that will help you recreate the finest ramen bowls,
-          crispy
-          tempura, succulent yakitori skewers, and indulge in the most exquisite Japanese desserts, all from the comfort
-          of your
-          own home.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ---------------------------------INDIAN HEADER------------------ -->
-  <section class="container-fluid row d-flex justify-content-center d-none" id="indianHeader">
-    <div class="col-6 d-flex justify-content-center align-items-center">
-      <div class="row">
-        <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Indian Recipes</h2> <br>
-        <p style="color: antiquewhite;">Embark on a culinary journey through the vibrant flavors of Indian cuisine,
-          venturing far beyond the conventional
-          curries and samosas. Immerse yourself in a treasure trove of authentic recipes that unveil the heart and soul
-          of Indian
-          cooking. Discover meticulous cooking instructions that empower you to craft intricate biryanis, aromatic
-          masalas, tender
-          tandoori kebabs, and delve into the realm of decadent Indian sweets that will transport your taste buds to a
-          world of
-          pure delight, all from your very own kitchen sanctuary.</p>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- -----------------------------TURKISH HEADER --------------------------- -->
-  <section class="container-fluid row d-flex justify-content-center d-none" id="turkishHeader">
-    <div class="col-6 d-flex justify-content-center align-items-center">
-      <div class="row">
-        <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Turkish Recipes</h2> <br>
-        <p style="color: antiquewhite;">Embark on an odyssey into the captivating world of Turkish cuisine, where
-          flavors dance in harmonious symphonies that
-          transcend the ordinary. Leave behind the familiar echoes of kebabs and baklavas, and immerse yourself in an
-          anthology of
-          genuine recipes that unfurl the very essence of Turkish culinary artistry. Embrace the revelations of
-          intricate cooking
-          methods that empower you to conjure exquisite böreks, tender köfte, fragrant pilavs, and explore the enigmatic
-          domain of
-          lavish Turkish confections, inviting you to partake in a mosaic of flavors that stir the senses. From the
-          heart of your
-          kitchen, ignite your passion for discovery and savor the narratives woven within Turkey's gastronomic
-          heritage, each
-          dish a testament to the richness of tradition and innovation.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- --------------------------ITALIAN HEADER---------------------- -->
-  <section class="container-fluid row d-flex justify-content-center d-none" id="italianHeader">
-    <div class="col-6 d-flex justify-content-center align-items-center">
-      <div class="row">
-        <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Italian Recipes</h2> <br>
-        <p style="color: antiquewhite;">Step into a world of Italian culinary delight as you peruse our menu. Inhale the
-          aroma of freshly baked focaccia, a
-          prelude to the culinary journey awaiting you. Indulge in the creamy ecstasy of Risotto al Funghi, where wild
-          mushrooms
-          intertwine with Arborio rice and Parmigiano-Reggiano. Succumb to the allure of Linguine alle Vongole, where
-          tender clams
-          mingle with al dente pasta in a white wine and garlic embrace. Delight in the heartwarming Osso Buco, a
-          slow-braised
-          veal shank adorned with zesty Gremolata. And for a sweet finale, our Tiramisu beckons – layers of mascarpone,
-          espresso-soaked ladyfingers, and cocoa. Let every bite reveal the essence of Italy, where passion and flavor
-          intertwine
-          seamlessly.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- --------------------------------Breakfast Header------------ -->
-  <section class="container-fluid row d-flex justify-content-center d-none" id="breakfastHeader">
-    <div class="col-6 d-flex justify-content-center align-items-center">
-      <div class="row">
-        <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Breakfast Recipes</h2> <br>
-        <p style="color: antiquewhite;">Indulge in a delightful morning with our collection of breakfast recipes. From
-          fluffy pancakes drizzled with maple syrup
-          to hearty avocado toast topped with poached eggs, we have the perfect start to your day. For those on the go,
-          our
-          overnight oats with a medley of fruits provide a nutritious and convenient option. Whether you crave sweet or
-          savory,
-          our breakfast recipes will energize you for a productive day ahead</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ------------------------------------------Lunch Header---------------------- -->
-
-  <section class="container-fluid row d-flex justify-content-center d-none" id="lunchHeader">
-    <div class="col-6 d-flex justify-content-center align-items-center">
-      <div class="row">
-        <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Lunch Recipes</h2> <br>
-        <p style="color: antiquewhite;">Revitalize your midday break with our array of lunch recipes. Dive into a
-          colorful quinoa salad packed with fresh
-          vegetables and a zesty vinaigrette, or savor a classic turkey and avocado wrap for a satisfying protein boost.
-          For a
-          comforting choice, our creamy tomato soup paired with a grilled cheese sandwich is a timeless combo. Explore
-          our diverse
-          range of lunch recipes to find something that suits your taste and keeps you fueled.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ------------------------------------Dinner Header------------- -->
-  <section class="container-fluid row d-flex justify-content-center d-none" id="dinnerHeader">
-    <div class="col-6 d-flex justify-content-center align-items-center">
-      <div class="row">
-        <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Dinner Recipes</h2> <br>
-        <p style="color: antiquewhite;">Elevate your evening with our exquisite dinner recipes that cater to every
-          palate. From succulent grilled salmon with
-          lemon-dill sauce to a hearty bowl of mushroom risotto, our dinner options are both impressive and easy to
-          prepare. If
-          you're seeking a vegetarian delight, the roasted vegetable and pesto pasta never disappoints. Create memorable
-          dinner
-          experiences with our recipes that balance flavor, nutrition, and simplicity.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- -------------------------------DISSERTS--------------------------- -->
-  <section class="container-fluid row d-flex justify-content-center d-none" id="dissertHeader">
-    <div class="col-6 d-flex justify-content-center align-items-center">
-      <div class="row">
-        <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Disserts Recipes</h2> <br>
-        <p style="color: antiquewhite;">Satisfy your sweet tooth with our heavenly dessert recipes. Indulge in the rich
-          decadence of a molten chocolate lava
-          cake, or enjoy the timeless charm of freshly baked chocolate chip cookies. For a lighter option, our mixed
-          berry parfait
-          layers luscious fruits with creamy yogurt. Whether you're celebrating or simply treating yourself, our dessert
-          recipes
-          provide the perfect finale to any meal</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- --------------------------------COCKTAILS-------------------- -->
-  <section class="container-fluid row d-flex justify-content-center d-none" id="cocktailsHeader">
-    <div class="col-6 d-flex justify-content-center align-items-center">
-      <div class="row">
-        <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Stirring the Extraordinary</h2> <br>
-        <p style="color: antiquewhite;">Elevate your beverage game with our tantalizing cocktail recipes that promise to
-          excite your taste buds and elevate your
-          spirits. From timeless classics like the martini and margarita to innovative concoctions crafted by our
-          mixology
-          experts, our collection offers a diverse range of libations to suit every occasion. Unleash your inner
-          bartender as you
-          follow our easy-to-follow instructions, garnishing your creations with flair. Join us in the art of cocktail
-          craftsmanship, where each sip is a journey of flavor and enjoyment. Cheers to making memories, clinking
-          glasses, and
-          celebrating life's moments with these liquid works of art.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ----------------------------------ABOUT PAGE------------------- -->
-  <section class="container-fluid row d-flex justify-content-center d-none" id="aboutHeader">
-    <div class="col-6 d-flex justify-content-center align-items-center">
-      <div class="row mt-4 text-center">
-        <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">About Recipe Rescue</h5> <br>
-        <p style="color: antiquewhite;">Welcome to Recipe Rescue, where culinary inspiration meets delicious reality.
-          Our mission is to ignite your passion for
-          cooking and elevate your dining experience with a diverse array of recipes that span the globe. Whether you're
-          a
-          seasoned home chef or just beginning your culinary journey, you'll find something to inspire, cook, and enjoy
-          in our
-          carefully curated collection.</p>
-        <br>
-        <br>
-        <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Explore and Discover</h5>
-        <p style="color: antiquewhite;">Embark on a gastronomic adventure as you explore our meticulously crafted
-          recipes that cater to every palate
-          and
-          occasion. From hearty breakfasts that kickstart your day to delightful desserts that satisfy your sweet
-          cravings, our
-          extensive range of meal options will leave you spoilt for choice.</p>
-        <br>
-        <br>
-        <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Cuisine From Around the World
-        </h5>
-        <p style="color: antiquewhite;">Travel the world through your taste buds with our selection of international
-          cuisine. Indulge in the rich flavors of
-          Italian classics, explore the intricate spices of Indian dishes, savor the diverse offerings of Turkish
-          delicacies, and
-          immerse yourself in the art of Japanese culinary mastery. Our recipes bring the essence of each culture's
-          culinary
-          heritage straight to your kitchen.</p>
-        <br>
-        <br>
-        <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Easy-to-Follow Instructions</h5>
-        <p style="color: antiquewhite;">Cooking should be an enjoyable experience, and that's why we provide
-          step-by-step instructions that guide you through
-          the cooking process. Whether you're a novice or an experienced cook, our recipes are designed to be accessible
-          and
-          rewarding, ensuring your success in the kitchen.</p>
-        <br>
-        <br>
-        <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">From Kitchen to Table</h5>
-        <p style="color: antiquewhite;">The heart of any home is its kitchen, where meals are prepared and memories are
-          made. Let Recipe Rescue be your culinary
-          companion, inspiring you to create memorable dishes that delight your loved ones and create cherished moments
-          around the
-          table.</p>
-        <br>
-        <br>
-        <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Join Our Community</h5>
-        <p style="color: antiquewhite;">Become a part of our vibrant culinary community, where food enthusiasts from all
-          walks of life come together to share
-          their passion for cooking, exchange ideas, and inspire one another. Follow us on social media to stay updated
-          on the
-          latest recipes, cooking tips, and food trends.</p>
-        <br>
-        <br>
-        <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Get Cooking Today</h5>
-        <p style="color: antiquewhite;">Whether you're looking to impress guests with a gourmet dinner, whip up a quick
-          and nourishing meal, or indulge in a
-          delectable dessert, Recipe Rescue has the recipes you need to bring your culinary dreams to life. Join us on
-          this
-          flavorful journey and unleash your inner chef.</p>
-      </div>
+      </section>
 
     </div>
-  </section>
 
+    <!-- ---------------------------------INDIAN HEADER------------------ -->
+    <div>
+      <section class="container-fluid row d-flex justify-content-center d-none" id="indianHeader">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <div class="row">
+            <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Indian Recipes</h2> <br>
+            <p style="color: antiquewhite;">Embark on a culinary journey through the vibrant flavors of Indian cuisine,
+              venturing far beyond the conventional
+              curries and samosas. Immerse yourself in a treasure trove of authentic recipes that unveil the heart and
+              soul
+              of Indian
+              cooking. Discover meticulous cooking instructions that empower you to craft intricate biryanis, aromatic
+              masalas, tender
+              tandoori kebabs, and delve into the realm of decadent Indian sweets that will transport your taste buds to
+              a
+              world of
+              pure delight, all from your very own kitchen sanctuary.</p>
+          </div>
+        </div>
+      </section>
 
-  <!-- ------------------PASTA header------------------ -->
-  <section class="container-fluid row d-flex justify-content-center d-none" id="pastaHeader">
-    <div class="col-6 d-flex justify-content-center align-items-center">
-      <div class="row">
-        <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Pasta Recipes</h2> <br>
-        <p style="color: antiquewhite;">Explore a world of pasta perfection with our delectable pasta recipes. From
-          classic comfort dishes to innovative
-          creations, our collection offers a symphony of flavors and textures that will tantalize your taste buds.
-          Elevate your
-          cooking with step-by-step instructions for crafting mouthwatering sauces, combining the finest ingredients,
-          and
-          achieving the ideal al dente texture. Whether you're a fan of creamy carbonara, zesty marinara, or rich pesto,
-          our pasta
-          recipes cater to every craving. Unleash your culinary creativity and embark on a pasta journey that promises
-          satiety and
-          satisfaction in every bite.</p>
-      </div>
     </div>
-  </section>
 
-  <!-- -------------------------VEGAN header----------------- -->
-  <section class="container-fluid row d-flex justify-content-center d-none" id="veganHeader">
-    <div class="col-6 d-flex justify-content-center align-items-center">
-      <div class="row">
-        <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Vegan recipes</h2> <br>
-        <p style="color: antiquewhite;">Discover the vibrant and diverse world of vegan recipes that redefine
-          plant-based dining, offering a multitude of
-          benefits for both you and the planet. Our collection celebrates the art of crafting delicious and nourishing
-          dishes
-          without compromising on flavor. By embracing vegan cuisine, you not only enjoy a healthier lifestyle with
-          reduced
-          saturated fats and cholesterol but also contribute to environmental sustainability by reducing your carbon
-          footprint.
-          From hearty mains to indulgent desserts, each recipe is a testament to the endless possibilities of
-          cruelty-free
-          cooking. Immerse yourself in the richness of natural ingredients, innovative substitutes, and imaginative
-          seasonings
-          that transform every meal into a culinary masterpiece. Elevate your taste buds and join us in the journey
-          towards a more
-          conscious and compassionate way of enjoying food.
-        </p>
-      </div>
+    <!-- -----------------------------TURKISH HEADER --------------------------- -->
+    <div>
+      <section class="container-fluid row d-flex justify-content-center d-none" id="turkishHeader">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <div class="row">
+            <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Turkish Recipes</h2> <br>
+            <p style="color: antiquewhite;">Embark on an odyssey into the captivating world of Turkish cuisine, where
+              flavors dance in harmonious symphonies that
+              transcend the ordinary. Leave behind the familiar echoes of kebabs and baklavas, and immerse yourself in
+              an
+              anthology of
+              genuine recipes that unfurl the very essence of Turkish culinary artistry. Embrace the revelations of
+              intricate cooking
+              methods that empower you to conjure exquisite böreks, tender köfte, fragrant pilavs, and explore the
+              enigmatic
+              domain of
+              lavish Turkish confections, inviting you to partake in a mosaic of flavors that stir the senses. From the
+              heart of your
+              kitchen, ignite your passion for discovery and savor the narratives woven within Turkey's gastronomic
+              heritage, each
+              dish a testament to the richness of tradition and innovation.</p>
+          </div>
+        </div>
+      </section>
+
     </div>
-  </section>
-
-  <!-- ---------------------------SOUP HEADER--------------------- -->
-  <section class="container-fluid row d-flex justify-content-center d-none" id="soupHeader">
-    <div class="col-6 d-flex justify-content-center align-items-center">
-      <div class="row">
-        <h2 style=" font-weight: bold; color: rgba(205, 223, 218, 0.906)"> Soup recipes</h2> <br>
-        <p style="color: antiquewhite;">Delve into the comforting world of soups, where warmth and nourishment combine
-          in a single bowl. Our soup recipes offer
-          not only a delightful taste experience but also a range of benefits for your well-being. From soothing colds
-          to
-          providing a quick, balanced meal, soups are a versatile option. Packed with vitamins, minerals, and hydration,
-          they
-          contribute to your overall health. Whether you're savoring a hearty vegetable stew or enjoying a light,
-          broth-based
-          concoction, each spoonful is a journey through layers of flavor and comfort. Join us in exploring a variety of
-          soups
-          that cater to every palate and dietary need, and elevate your dining moments with bowls of liquid nourishment.
-        </p>
-      </div>
+    <!-- --------------------------ITALIAN HEADER---------------------- -->
+    <div>
+      <section class="container-fluid row d-flex justify-content-center d-none" id="italianHeader">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <div class="row">
+            <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Italian Recipes</h2> <br>
+            <p style="color: antiquewhite;">Step into a world of Italian culinary delight as you peruse our menu. Inhale
+              the
+              aroma of freshly baked focaccia, a
+              prelude to the culinary journey awaiting you. Indulge in the creamy ecstasy of Risotto al Funghi, where
+              wild
+              mushrooms
+              intertwine with Arborio rice and Parmigiano-Reggiano. Succumb to the allure of Linguine alle Vongole,
+              where
+              tender clams
+              mingle with al dente pasta in a white wine and garlic embrace. Delight in the heartwarming Osso Buco, a
+              slow-braised
+              veal shank adorned with zesty Gremolata. And for a sweet finale, our Tiramisu beckons – layers of
+              mascarpone,
+              espresso-soaked ladyfingers, and cocoa. Let every bite reveal the essence of Italy, where passion and
+              flavor
+              intertwine
+              seamlessly.</p>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
+    <!-- --------------------------------Breakfast Header------------ -->
+    <div>
+      <section class="container-fluid row d-flex justify-content-center d-none" id="breakfastHeader">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <div class="row">
+            <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Breakfast Recipes</h2> <br>
+            <p style="color: antiquewhite;">Indulge in a delightful morning with our collection of breakfast recipes.
+              From
+              fluffy pancakes drizzled with maple syrup
+              to hearty avocado toast topped with poached eggs, we have the perfect start to your day. For those on the
+              go,
+              our
+              overnight oats with a medley of fruits provide a nutritious and convenient option. Whether you crave sweet
+              or
+              savory,
+              our breakfast recipes will energize you for a productive day ahead</p>
+          </div>
+        </div>
+      </section>
 
+    </div>
+    <!-- ------------------------------------------Lunch Header---------------------- -->
+    <div>
+      <section class="container-fluid row d-flex justify-content-center d-none" id="lunchHeader">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <div class="row">
+            <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Lunch Recipes</h2> <br>
+            <p style="color: antiquewhite;">Revitalize your midday break with our array of lunch recipes. Dive into a
+              colorful quinoa salad packed with fresh
+              vegetables and a zesty vinaigrette, or savor a classic turkey and avocado wrap for a satisfying protein
+              boost.
+              For a
+              comforting choice, our creamy tomato soup paired with a grilled cheese sandwich is a timeless combo.
+              Explore
+              our diverse
+              range of lunch recipes to find something that suits your taste and keeps you fueled.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ------------------------------------Dinner Header------------- -->
+    <div>
+      <section class="container-fluid row d-flex justify-content-center d-none" id="dinnerHeader">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <div class="row">
+            <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Dinner Recipes</h2> <br>
+            <p style="color: antiquewhite;">Elevate your evening with our exquisite dinner recipes that cater to every
+              palate. From succulent grilled salmon with
+              lemon-dill sauce to a hearty bowl of mushroom risotto, our dinner options are both impressive and easy to
+              prepare. If
+              you're seeking a vegetarian delight, the roasted vegetable and pesto pasta never disappoints. Create
+              memorable
+              dinner
+              experiences with our recipes that balance flavor, nutrition, and simplicity.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- -------------------------------DISSERTS--------------------------- -->
+    <div>
+      <section class="container-fluid row d-flex justify-content-center d-none" id="dissertHeader">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <div class="row">
+            <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Disserts Recipes</h2> <br>
+            <p style="color: antiquewhite;">Satisfy your sweet tooth with our heavenly dessert recipes. Indulge in the
+              rich
+              decadence of a molten chocolate lava
+              cake, or enjoy the timeless charm of freshly baked chocolate chip cookies. For a lighter option, our mixed
+              berry parfait
+              layers luscious fruits with creamy yogurt. Whether you're celebrating or simply treating yourself, our
+              dessert
+              recipes
+              provide the perfect finale to any meal</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- --------------------------------COCKTAILS-------------------- -->
+    <div>
+      <section class="container-fluid row d-flex justify-content-center d-none" id="cocktailsHeader">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <div class="row">
+            <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Stirring the Extraordinary</h2> <br>
+            <p style="color: antiquewhite;">Elevate your beverage game with our tantalizing cocktail recipes that
+              promise
+              to
+              excite your taste buds and elevate your
+              spirits. From timeless classics like the martini and margarita to innovative concoctions crafted by our
+              mixology
+              experts, our collection offers a diverse range of libations to suit every occasion. Unleash your inner
+              bartender as you
+              follow our easy-to-follow instructions, garnishing your creations with flair. Join us in the art of
+              cocktail
+              craftsmanship, where each sip is a journey of flavor and enjoyment. Cheers to making memories, clinking
+              glasses, and
+              celebrating life's moments with these liquid works of art.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- ----------------------------------ABOUT PAGE------------------- -->
+
+    <section class="container-fluid row d-flex justify-content-center d-none" id="aboutHeader">
+      <div class="col-6 d-flex justify-content-center align-items-center">
+        <div class="row mt-4 text-center">
+          <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">About Recipe Rescue</h5> <br>
+          <p style="color: antiquewhite;">Welcome to Recipe Rescue, where culinary inspiration meets delicious reality.
+            Our mission is to ignite your passion for
+            cooking and elevate your dining experience with a diverse array of recipes that span the globe. Whether
+            you're
+            a
+            seasoned home chef or just beginning your culinary journey, you'll find something to inspire, cook, and
+            enjoy
+            in our
+            carefully curated collection.</p>
+          <br>
+          <br>
+          <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Explore and Discover</h5>
+          <p style="color: antiquewhite;">Embark on a gastronomic adventure as you explore our meticulously crafted
+            recipes that cater to every palate
+            and
+            occasion. From hearty breakfasts that kickstart your day to delightful desserts that satisfy your sweet
+            cravings, our
+            extensive range of meal options will leave you spoilt for choice.</p>
+          <br>
+          <br>
+          <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Cuisine From Around the World
+          </h5>
+          <p style="color: antiquewhite;">Travel the world through your taste buds with our selection of international
+            cuisine. Indulge in the rich flavors of
+            Italian classics, explore the intricate spices of Indian dishes, savor the diverse offerings of Turkish
+            delicacies, and
+            immerse yourself in the art of Japanese culinary mastery. Our recipes bring the essence of each culture's
+            culinary
+            heritage straight to your kitchen.</p>
+          <br>
+          <br>
+          <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Easy-to-Follow Instructions
+          </h5>
+          <p style="color: antiquewhite;">Cooking should be an enjoyable experience, and that's why we provide
+            step-by-step instructions that guide you through
+            the cooking process. Whether you're a novice or an experienced cook, our recipes are designed to be
+            accessible
+            and
+            rewarding, ensuring your success in the kitchen.</p>
+          <br>
+          <br>
+          <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">From Kitchen to Table</h5>
+          <p style="color: antiquewhite;">The heart of any home is its kitchen, where meals are prepared and memories
+            are
+            made. Let Recipe Rescue be your culinary
+            companion, inspiring you to create memorable dishes that delight your loved ones and create cherished
+            moments
+            around the
+            table.</p>
+          <br>
+          <br>
+          <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Join Our Community</h5>
+          <p style="color: antiquewhite;">Become a part of our vibrant culinary community, where food enthusiasts from
+            all
+            walks of life come together to share
+            their passion for cooking, exchange ideas, and inspire one another. Follow us on social media to stay
+            updated
+            on the
+            latest recipes, cooking tips, and food trends.</p>
+          <br>
+          <br>
+          <h5 class="my-2" style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Get Cooking Today</h5>
+          <p style="color: antiquewhite;">Whether you're looking to impress guests with a gourmet dinner, whip up a
+            quick
+            and nourishing meal, or indulge in a
+            delectable dessert, Recipe Rescue has the recipes you need to bring your culinary dreams to life. Join us on
+            this
+            flavorful journey and unleash your inner chef.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ------------------PASTA header------------------ -->
+    <section class="container-fluid row d-flex justify-content-center d-none" id="pastaHeader">
+      <div class="col-6 d-flex justify-content-center align-items-center">
+        <div class="row">
+          <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Pasta Recipes</h2> <br>
+          <p style="color: antiquewhite;">Explore a world of pasta perfection with our delectable pasta recipes. From
+            classic comfort dishes to innovative
+            creations, our collection offers a symphony of flavors and textures that will tantalize your taste buds.
+            Elevate your
+            cooking with step-by-step instructions for crafting mouthwatering sauces, combining the finest ingredients,
+            and
+            achieving the ideal al dente texture. Whether you're a fan of creamy carbonara, zesty marinara, or rich
+            pesto,
+            our pasta
+            recipes cater to every craving. Unleash your culinary creativity and embark on a pasta journey that promises
+            satiety and
+            satisfaction in every bite.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------VEGAN header----------------- -->
+    <section class="container-fluid row d-flex justify-content-center d-none" id="veganHeader">
+      <div class="col-6 d-flex justify-content-center align-items-center">
+        <div class="row">
+          <h2 style="font-weight: bold; color: rgba(205, 223, 218, 0.906);">Vegan recipes</h2> <br>
+          <p style="color: antiquewhite;">Discover the vibrant and diverse world of vegan recipes that redefine
+            plant-based dining, offering a multitude of
+            benefits for both you and the planet. Our collection celebrates the art of crafting delicious and nourishing
+            dishes
+            without compromising on flavor. By embracing vegan cuisine, you not only enjoy a healthier lifestyle with
+            reduced
+            saturated fats and cholesterol but also contribute to environmental sustainability by reducing your carbon
+            footprint.
+            From hearty mains to indulgent desserts, each recipe is a testament to the endless possibilities of
+            cruelty-free
+            cooking. Immerse yourself in the richness of natural ingredients, innovative substitutes, and imaginative
+            seasonings
+            that transform every meal into a culinary masterpiece. Elevate your taste buds and join us in the journey
+            towards a more
+            conscious and compassionate way of enjoying food.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------------------SOUP HEADER--------------------- -->
+    <section class="container-fluid row d-flex justify-content-center d-none" id="soupHeader">
+      <div class="col-6 d-flex justify-content-center align-items-center">
+        <div class="row">
+          <h2 style=" font-weight: bold; color: rgba(205, 223, 218, 0.906)"> Soup recipes</h2> <br>
+          <p style="color: antiquewhite;">Delve into the comforting world of soups, where warmth and nourishment combine
+            in a single bowl. Our soup recipes offer
+            not only a delightful taste experience but also a range of benefits for your well-being. From soothing colds
+            to
+            providing a quick, balanced meal, soups are a versatile option. Packed with vitamins, minerals, and
+            hydration,
+            they
+            contribute to your overall health. Whether you're savoring a hearty vegetable stew or enjoying a light,
+            broth-based
+            concoction, each spoonful is a journey through layers of flavor and comfort. Join us in exploring a variety
+            of
+            soups
+            that cater to every palate and dietary need, and elevate your dining moments with bowls of liquid
+            nourishment.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class=" container searchResult">
+
+    </div>
+
+  </div>
   <!-- ---------Feutered Content -->
 
 
@@ -503,13 +549,13 @@
             <div class="col-12">
               <h6 style="font-weight: bold;">FOOD & RECIPES</h6>
               <ul class="list-unstyled">
-                <a class="headerButton" data-target="pastaHeader" id="pastaButton" href="#">
+                <a class="headerButton" data-value="pasta" data-target="pastaHeader" id="pastaButton" href="#">
                   <li> Pasta Recipes</li>
                 </a>
-                <a class="headerButton" data-target="veganHeader" id="veganButton" href="#">
+                <a class="headerButton" data-value="vegan" data-target="veganHeader" id="veganButton" href="#">
                   <li> Vegan Recipes</li>
                 </a>
-                <a class="headerButton" data-target="soupHeader" id="soupButton" href="#">
+                <a class="headerButton" data-value="soup" data-target="soupHeader" id="soupButton" href="#">
                   <li>Soup Recipes</li>
                 </a>
 
