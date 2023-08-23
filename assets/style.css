@@ -17,6 +17,7 @@ nav {
   backdrop-filter: blur(10px);
 }
 
+
 #welcome {
   font-weight: 500;
   color: white;
@@ -236,7 +237,7 @@ nav {
 
 
 /* -------------Footer-------------------- */
-#FooterSection {
+.footer {
   background-color: black;
   color: white;
   /* border-bottom: solid 2px white; */
@@ -290,6 +291,38 @@ footer .row .col-4 .row .col-12 a svg {
   border-radius: 50px;
   background-color: grey;
 }
+
+/* -------------------generated card style */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translatey(-5px);
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.position-relative {
+  position: relative;
+}
+
+.save-icon {
+  position: absolute;
+  top: 10px;
+
+  right: 10px;
+
+  font-size: 20px;
+  color: red;
+  transition: transform 0.3s ease;
+}
+
+.save-icon:hover {
+  transform: scale(1.2);
+}
+
+/* --------foooter---------- */
 
 footer .row .col-4 .row .col-12 .list-unstyled a li {
   margin-top: 10px;

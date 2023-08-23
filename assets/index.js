@@ -73,27 +73,30 @@ $(document).ready(function () {
     const baseURL = `https://api.edamam.com/search?q=${selectedValue}&app_id=${appId}&app_key=${apiKey}&from=0&to=6`;
     const response = await fetch(baseURL);
     const data = await response.json();
-    generateHTML(data.hits);
+    generateCards(data.hits);
     console.log(data);
   }
 
   var searchResult = $(".searchResult");
-  function generateHTML(results) {
+  function generateCards(results) {
     searchResult.empty();
 
     let rowContainer;
 
     results.forEach((result, i) => {
       if (i % 3 === 0) {
-        // Start a new row after every 3 cards
+        // Starts a new row after every 3 cards
         rowContainer = $("<div class='row'></div>");
         searchResult.append(rowContainer);
       }
-      //cards structured
+      //cards structure
       const cardHTML = `
       <div class="col-md-4 my-2">
-        <div class="card" style="width: 18rem;">
+        <div class="card card-hover" style="width: 18rem; ">
+        <div class="position-relative">
           <img src="${result.recipe.image}" class="card-img-top" alt="...">
+        <a href="#">  <span class="save-icon">&#10084;</span></a>
+          </div>
           <div class="card-body">
             <h5 class="card-title">${result.recipe.label}</h5>
             <p class="card-text"> Cuisine type: ${
@@ -105,7 +108,7 @@ $(document).ready(function () {
             )}</p>
               <p class="card-text"> Cooking time: ${result.recipe.totalTime} min
               </p>
-            <div class"row d-flex justify-content-end">
+            <div class="row d-flex justify-content-end">
             <a href="${
               result.recipe.url
             }" class="btn btn-secondary">View Recipe</a>
