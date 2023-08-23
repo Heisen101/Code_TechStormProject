@@ -42,17 +42,16 @@
 //           console.error("Fetch error:", error);
 //         });
 //     }
-//   });
-// });
-
+//   });   5ab9dc34c074ab5086a207e32c79a563
+// });   39493a96
 // ----------Event Listeners for Headers------
 
 $(document).ready(function () {
   // -------------function for hiden and show content
   const searchButton = $("#searchBarButton");
   let searchQuery = "";
-  const appId = "39493a96";
-  const apiKey = "5ab9dc34c074ab5086a207e32c79a563";
+  const appId = "";
+  const apiKey = "";
   var search = $("#searchInputArea").val();
   const headerSection = $(".container-fluid.row.d-flex.justify-content-center");
   const headerButtons = $(".headerButton");
