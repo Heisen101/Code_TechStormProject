@@ -46,6 +46,111 @@
 // });   39493a96
 // ----------Event Listeners for Headers------
 
+// $(document).ready(function () {
+//   // -------------function for hiden and show content
+//   const searchButton = $("#searchBarButton");
+//   let searchQuery = "";
+//   const appId = "39493a96";
+//   const apiKey = "5ab9dc34c074ab5086a207e32c79a563";
+//   var search = $("#searchInputArea").val();
+//   const headerSection = $(".container-fluid.row.d-flex.justify-content-center");
+//   const headerButtons = $(".headerButton");
+//   // -----------------hide content and display it function
+//   headerButtons.on("click", function () {
+//     const target = $(this).data("target");
+//     const selectedValue = $(this).data("value");
+//     headerSection.addClass("d-none");
+//     $("#" + target).removeClass("d-none");
+//     // searchQuery = $(this).data("value");
+//     fetchAPI(selectedValue);
+//   });
+//   // searchButton.on("click", (e) => {
+//   //   e.preventDefault();
+//   //   searchQuery = $("#searchInputArea").val();
+
+//   // });
+//   async function fetchAPI(selectedValue) {
+//     const baseURL = `https://api.edamam.com/search?q=${selectedValue}&app_id=${appId}&app_key=${apiKey}&from=0&to=6`;
+//     const response = await fetch(baseURL);
+//     const data = await response.json();
+//     generateCards(data.hits);
+//     console.log(data.recipe);
+//   }
+
+//   var searchResult = $(".searchResult");
+//   function generateCards(results) {
+//     searchResult.empty();
+
+//     let rowContainer;
+
+//     results.forEach((result, i) => {
+//       if (i % 3 === 0) {
+//         // Starts a new row after every 3 cards
+//         rowContainer = $("<div class='row'></div>");
+//         searchResult.append(rowContainer);
+//       }
+//       //cards structure
+//       const cardHTML = `
+//       <div class="col-md-4 my-2">
+//         <div class="card card-hover" style="width: 18rem; ">
+//         <div class="position-relative">
+//           <img src="${result.recipe.image}" class="card-img-top" alt="...">
+//         <a href="#" class= "save-icon" data-recipe='${JSON.stringify(
+//           result.recipe
+//         )}' >  <span class="save-icon1">&#10084;</span></a>
+//           </div>
+//           <div class="card-body">
+//             <h5 class="card-title">${result.recipe.label}</h5>
+//             <p class="card-text"> Cuisine type: ${
+//               result.recipe.cuisineType
+//             } </p>
+//             <p class="card-text"> Meal type: ${result.recipe.mealType} </p>
+//             <p class="card-text"> Calories ${result.recipe.calories.toFixed(
+//               2
+//             )}</p>
+//               <p class="card-text"> Cooking time: ${result.recipe.totalTime} min
+//               </p>
+//             <div class="row d-flex justify-content-end">
+//             <a href="${
+//               result.recipe.url
+//             }" class="btn btn-secondary">View Recipe</a>
+
+//           </div>
+//         </div>
+//       </div>
+//     `;
+
+//       rowContainer.append(cardHTML);
+//       //if result.length is not equal devided by 3 still will make sure to display the cards
+//       // if (i === results.length - 1 && rowContainer) {
+//       //   searchResult.append(rowContainer);
+//       // }
+//     });
+//   }
+// ----------Saving Recipe data in local Storage
+//   // $(document).on("click", ".save-icon", function (e) {
+//   //   e.preventDefault();
+//   //   const recipeD = $(this).data("recipe");
+//   //   savedRecipe(recipeD);
+//   // });
+
+//   // function savedRecipe(recipeD) {
+//   //   let savedRecipes = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+//   //   savedRecipes.push(recipeD);
+//   //   localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
+//   //   console.log(savedRecipes);
+//   // }
+
+//   // $("#about1").on("click", function () {
+//   //   displaySavedRecipes();
+//   // });
+
+//   // function displaySavedRecipes() {
+//   //   const savedRecipes = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+//   //   generateCards(savedRecipes);
+//   // }    5ab9dc34c074ab5086a207e32c79a563
+// });   39493a96
+
 $(document).ready(function () {
   // -------------function for hiden and show content
   const searchButton = $("#searchBarButton");
@@ -64,17 +169,17 @@ $(document).ready(function () {
     // searchQuery = $(this).data("value");
     fetchAPI(selectedValue);
   });
-  // searchButton.on("click", (e) => {
-  //   e.preventDefault();
-  //   searchQuery = $("#searchInputArea").val();
+  searchButton.on("click", (e) => {
+    e.preventDefault();
+    searchQuery = $("#searchInputArea").val();
 
-  // });
+  });
   async function fetchAPI(selectedValue) {
     const baseURL = `https://api.edamam.com/search?q=${selectedValue}&app_id=${appId}&app_key=${apiKey}&from=0&to=6`;
     const response = await fetch(baseURL);
     const data = await response.json();
     generateCards(data.hits);
-    console.log(data);
+    console.log(data.recipe);
   }
 
   var searchResult = $(".searchResult");
@@ -83,46 +188,48 @@ $(document).ready(function () {
 
     let rowContainer;
 
-    results.forEach((result, i) => {
-      if (i % 3 === 0) {
-        // Starts a new row after every 3 cards
-        rowContainer = $("<div class='row'></div>");
-        searchResult.append(rowContainer);
-      }
-      //cards structure
-      const cardHTML = `
-      <div class="col-md-4 my-2">
-        <div class="card card-hover" style="width: 18rem; ">
-        <div class="position-relative">
-          <img src="${result.recipe.image}" class="card-img-top" alt="...">
-        <a href="#">  <span class="save-icon">&#10084;</span></a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">${result.recipe.label}</h5>
-            <p class="card-text"> Cuisine type: ${
-              result.recipe.cuisineType
-            } </p>
-            <p class="card-text"> Meal type: ${result.recipe.mealType} </p>
-            <p class="card-text"> Calories ${result.recipe.calories.toFixed(
-              2
-            )}</p>
-              <p class="card-text"> Cooking time: ${result.recipe.totalTime} min
-              </p>
-            <div class="row d-flex justify-content-end">
-            <a href="${
-              result.recipe.url
-            }" class="btn btn-secondary">View Recipe</a>
-            
-          </div>
-        </div>
-      </div>
-    `;
+// //     results.forEach((result, i) => {
+// //       if (i % 3 === 0) {
+// //         // Starts a new row after every 3 cards
+// //         rowContainer = $("<div class='row'></div>");
+// //         searchResult.append(rowContainer);
+// //       }
+// //       //cards structure
+// //       const cardHTML = `
+// //       <div class="col-md-4 my-2">
+// //         <div class="card card-hover" style="width: 18rem; ">
+// //         <div class="position-relative">
+// //           <img src="${result.recipe.image}" class="card-img-top" alt="...">
+// //         <a href="#">  <span class="save-icon" data-recipe='${JSON.stringify(
+// //           result.recipe
+// //         )}'>&#10084;</span></a>
+// //           </div>
+// //           <div class="card-body">
+// //             <h5 class="card-title">${result.recipe.label}</h5>
+// //             <p class="card-text"> Cuisine type: ${
+// //               result.recipe.cuisineType
+// //             } </p>
+// //             <p class="card-text"> Meal type: ${result.recipe.mealType} </p>
+// //             <p class="card-text"> Calories ${result.recipe.calories.toFixed(
+// //               2
+// //             )}</p>
+// //               <p class="card-text"> Cooking time: ${result.recipe.totalTime} min
+// //               </p>
+// //             <div class="row d-flex justify-content-end">
+// //             <a href="${
+// //               result.recipe.url
+// //             }" class="btn btn-secondary">View Recipe</a>
 
-      rowContainer.append(cardHTML);
-      //if result.length is not equal devided by 3 still will make sure to display the cards
-      // if (i === results.length - 1 && rowContainer) {
-      //   searchResult.append(rowContainer);
-      // }
-    });
-  }
-});
+// //           </div>
+// //         </div>
+// //       </div>
+// //     `;
+
+// //       rowContainer.append(cardHTML);
+// //       //if result.length is not equal devided by 3 still will make sure to display the cards
+// //       // if (i === results.length - 1 && rowContainer) {
+// //       //   searchResult.append(rowContainer);
+// //       // }
+// //     });
+// //   }
+// // });

@@ -1,3 +1,4 @@
+/* ------------farah comit---------- */
 body {
   margin: 0;
   padding: 0;
@@ -104,6 +105,7 @@ nav {
   min-height: 500px;
 }
 
+/* ------------------ SALMA COMITS */
 #turkishHeader {
   margin: 0;
   padding: 0;
@@ -161,6 +163,8 @@ nav {
   min-height: 500px;
 
 }
+
+/* ------------------OLA COMITS----------- */
 
 #dissertHeader {
   margin: 0;
@@ -292,6 +296,9 @@ footer .row .col-4 .row .col-12 a svg {
   background-color: grey;
 }
 
+
+/* ------------------IS NOT FR COMIT -------- */
+
 /* -------------------generated card style */
 .card-hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -307,7 +314,7 @@ footer .row .col-4 .row .col-12 a svg {
   position: relative;
 }
 
-.save-icon {
+.save-icon1 {
   position: absolute;
   top: 10px;
 
@@ -318,7 +325,7 @@ footer .row .col-4 .row .col-12 a svg {
   transition: transform 0.3s ease;
 }
 
-.save-icon:hover {
+.save-icon1:hover {
   transform: scale(1.2);
 }
 
